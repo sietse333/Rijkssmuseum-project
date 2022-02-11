@@ -1,0 +1,175 @@
+body {
+    width: max-content;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+main{
+    width: 453px;
+    height: 264px;
+    background-image: url("img/front.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+main:hover{
+    transform: scale(1.03);
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 453px;
+    height: 264px;
+    background-image: url("img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top: 0.1em;
+}
+
+section:hover{
+    transform: scale(1.03);
+}
+article{
+    color: white;
+    opacity: 85%;
+}
+.wrapper{
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+}
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
+.albums{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    box-shadow: -5px 5px 5px grey;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.albums:hover:nth-of-type(odd) {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.albums:hover:nth-of-type(even) {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+}
+
+h1{
+    transform: rotateZ(-20deg);
+    padding-left: 3em;
+    padding-top: 2em;
+    font-size: 4em;
+    opacity: 55%;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(to right, red, lightblue 50%, grey 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+h1:hover{
+    background-position: 0 100%;
+}
+h2{
+    padding-left: 0.8em;
+}
+
+h2:hover{
+    text-transform: 30%;
+}
+
+h3{
+    padding-left: 1.2em;
+}
+
+
+
+#achterkant{
+    display: none;
+    transition: .6s ease opacity,.6s ease transform;
+}
+
+#voorkant{
+    display: block;
+    transition: .6s ease opacity,.6s ease transform;
+}
+
+.stars{
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    top: -30em;
+}
+
+.star1{
+    animation-name: star;
+    animation-delay: .3s;
+}
+
+.star2{
+    animation-name: star2;
+    animation-delay: .2s;
+
+}
+
+.star3{
+    animation-name: star3;
+    animation-delay: .5s;
+
+}
+
+.star4{
+    animation-name: star4;
+    animation-delay: .1s;
+
+}
+.star5{
+    animation-name: star5;
+    animation-delay: .2s;
+
+}
+
+@keyframes star {
+    0%   {left:-9em; top:-14em; width:.5em; height:.5em}
+    100% {left:0px; top:-0em; width:0em; height:0em}
+  }
+  @keyframes star2 {
+    0%   {left:-5em; top:-14em; width:.5em; height:.5em}
+    100% {left:5em; top:-0em; width:0em; height:0em}
+}
+  
+
+  @keyframes star3 {
+    0%   {left:0em; top:-14em; width:.5em; height:.5em}
+    100% {left:10em; top:-0em; width:0em; height:0em}
+}
+  
+
+  @keyframes star4 {
+    0%   {left:5em; top:-14em; width:.5em; height:.5em}
+    100% {left:13em; top:-0em; width:0em; height:0em}
+}
+
+@keyframes star5 {
+    0%   {left:-12em; top:-16em; width:.5em; height:.5em}
+    100% {left:-4em; top:-0em; width:0em; height:0em}
+}
+  
+
