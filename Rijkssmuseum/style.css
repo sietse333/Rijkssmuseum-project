@@ -32,6 +32,13 @@ section{
     flex-direction: column;
 }
 
+section.skeleton{
+    height: 40em;
+    width: 55%;
+    margin: auto;
+    margin-top: 2em;
+}
+
 article > img:hover{
     transform: scale(1.05);
     transition-duration: .5s;
@@ -42,6 +49,20 @@ article > img{
     transition-duration: .5s;
     box-shadow:0 5px 31px 5px black;
 }
+
+article{
+    opacity: 0;
+    transform:scale(0.75) rotate(-10deg);
+    transition:.25s.25s;
+    transform-origin:0 0
+  }
+
+article.observed {
+    opacity: 1;
+    transform:scale(1) rotate(0);
+  }
+
+
 
 header{
     width: 100%;
@@ -55,14 +76,34 @@ h2{
     margin-top: 3em;
 }
 
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+    }
+    @keyframes skeleton-loading {
+    0% {
+    background-color: hsl(0, 0%, 43%);
+    }
+    100% {
+    background-color: hsl(0, 0%, 72%);
+    }    
+}
+
+
 header > button{
     position: absolute;
     width: 3em;
     height: 2em;
     
     left: 50%;
-    bottom: 0;
+    bottom: 0;;
 }
+
+h3{
+    margin-top:1em;
+    font-size:5em
+}
+
+
 
 @media only screen and (min-width: 1200px) {
     section {
@@ -76,6 +117,14 @@ header > button{
     article:nth-of-type(even){
         margin-top: 8em;
     }
+
+    section.skeleton{
+        height: 30em;
+        width: 25%;
+        margin: auto;
+        margin-top: 2em;
+    }
+    
     
 
   }
