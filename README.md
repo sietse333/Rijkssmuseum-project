@@ -2,8 +2,7 @@
 
 As an art lover, I want to be able to search and view art from the Rijksmuseum at home, so that I can still enjoy art during a lockdown Rijksmuseum - RijksData API
 
-
-
+**Logboek**
 
 Ik heb gekozen voor het rijkssmuseum project. Van alle projecten sprak deze me wel aan omdat ik gelijk wat ideeen kreeg hoe ik dit wou opzetten. Ook vind ik musea gewoon een leuk onderwerp. 
 
