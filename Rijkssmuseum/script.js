@@ -1,4 +1,4 @@
-const Sectionvak = document.querySelector('#test');
+const Sectionvak = document.querySelector('#section');
 const emptytext = document.querySelector('#empty');
 const fotoFoto = document.querySelector('.fotofoto');
 const fotoText = document.querySelector('.fototext');
