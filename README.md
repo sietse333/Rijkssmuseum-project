@@ -1,11 +1,14 @@
-**User story**
+https://sietse333.github.io/Rijkssmuseum-project/Rijkssmuseum/
+**Description of project**
+This is a project i made for the Rijkssmuseum. It uses the API from Rijkssmuseum to display pieces of art online. People can type in searchcommands to see pieces they want to see. 
 
+**User story**
 As an art lover, I want to be able to search and view art from the Rijksmuseum at home, so that I can still enjoy art during a lockdown Rijksmuseum - RijksData API
 
-**Logboek**
+![rijksss](https://user-images.githubusercontent.com/43068118/157021337-6b43c6b4-da2e-493e-ba21-d9b82de603ea.png)
 
-Ik heb gekozen voor het rijkssmuseum project. Van alle projecten sprak deze me wel aan omdat ik gelijk wat ideeen kreeg hoe ik dit wou opzetten. Ook vind ik musea gewoon een leuk onderwerp. 
+**How to instal**
+You can simply fork this project and run it on your pc. You need to run it from a live server so if you have visual studio code you need to download the live server extension. 
 
-Eerst ben ik begonnen met een design maken in illustrator gevolgd door een wireflow. Daarna ben ik vrij snel aan de slag gegaan. Eerst met de api heb ik data opgehaald daarna begon ik met stylen. Ik heb gekozen voor een donkere pagina waar ik de paintings laat zien met een shaduw zodat het lijkt alsof ze opgehangen zijn.
-
-Ook heb ik met javaScript ervoor gezorgd dat de paintings in je scherp animeren wanneer je erover heen scrolled.
+**External data source?**
+I have used the Rijkssmuseum api. You can get it by creating a account on their website. Then you can request it and you get it in the mail. I use this api by
