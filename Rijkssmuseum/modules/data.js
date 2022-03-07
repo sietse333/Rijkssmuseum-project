@@ -3,7 +3,7 @@ import { hideLoading } from './loading.js'
 import { renderHTML } from './render.js'
 
 
-export function getData(url) {
+export const getData = (url) =>{
     const data = fetch(url)
       .then(response => response.json())
       .then(data => {
@@ -11,6 +11,5 @@ export function getData(url) {
         emptyText.textContent = "";
         renderHTML(data)
       })
-      .catch(err => console.log(err))
+      .catch(err => emptyText.textContent = "Failed to load paintings please try again!" )
   }
-
