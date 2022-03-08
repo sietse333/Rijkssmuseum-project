@@ -2,7 +2,7 @@ import { sectionArea } from './vars.js'
 import { generateObserver } from './observer.js'
 
 // The data is being rendered into the html page
-export const renderHTML = (data) => {
+export const renderHTML = (data, done) => {
     console.log(data)
     data.artObjects.forEach(kunst => {
         sectionArea.insertAdjacentHTML(
@@ -12,7 +12,9 @@ export const renderHTML = (data) => {
             </article>
             `)
         })
-    generateObserver();
+    generateObserver(() => {
+        done();
+    })
   }
 
 // <a href="${kunst.id}" </a>
