@@ -11,5 +11,5 @@ export const getData = (url) =>{
         emptyText.textContent = "";
         renderHTML(data)
       })
-      .catch(err => emptyText.textContent = "Failed to load paintings please try again!" )
+      .catch(err => emptyText.textContent = "Failed to load paintings please refresh the page" )
   }

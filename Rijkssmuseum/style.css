@@ -82,7 +82,9 @@ footer{
 }
 
 h2{
-    margin: 3em 1em 1em 1em;
+    width: 56%;
+    margin: auto;
+    padding: 3em 1em 1em 1em;
 }
 
 .skeleton {
